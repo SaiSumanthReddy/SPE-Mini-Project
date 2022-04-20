@@ -1,0 +1,8 @@
+---
+- name: Deploy docker img
+  hosts: all
+  tasks:
+    - name: Pull SPE-Mini-Project image
+      docker_image:
+        name: sumanthreddy084/spe-mini-project
+        source: pull
